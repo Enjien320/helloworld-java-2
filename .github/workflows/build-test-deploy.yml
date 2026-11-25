@@ -19,4 +19,4 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v6.2.0
       - name: build maven sans test
-        uses: mvn clean package -DskipTests
+        run: mvn clean package -DskipTests
